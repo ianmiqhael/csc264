@@ -306,7 +306,7 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #4C92C3;
+  color: #fff;
   font-size: 60px;
   padding: 8px 12px;
   position: absolute;
@@ -314,6 +314,11 @@ img {vertical-align: middle;}
   width: 100%;
   text-align: center;
   font-style: bold;
+  text-shadow:
+    3px 3px 2px #000,
+    -3px 3px 2px #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
 }
 
 /* Number text (1/3 etc) */
