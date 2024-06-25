@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Forgot Password?</h1>
+            <div class="input-box">
+                <input type="email" id="emailInput" placeholder="Email" required oninput="validateEmailInput()">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <br>
+                <span id="emailFeedback" style="color:01559D;"></span>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="New Password" required id="password" oninput="CheckPassword()">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm New Password" required id="confirm_password" oninput="CheckPassword()">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+            </div>
+            <div class="remember-forgot"> <!-- This is strictly to ensure the sign up button works-->
+            </div>
+            <button type="submit" class="btn">Change Password</button>
+        </form>
+
+    </div>
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

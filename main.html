@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportee - Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+</head>
+<body>
+    <header>
+    <a href="main.html" class="logo">Sportee </a>
+    <nav class="navigation">
+            <a href="about.html">About&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i></a>
+            <a href="cart.html">Cart&nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a href="profile.html">Profile&nbsp;<i class="fa fa-user" aria-hidden="true"></i></a>
+            <button class="btnLogin-popup"><a href="signIn.html">Login</a></button>
+    </nav>
+    </header>
+
+    <div class="menu">
+        <form action="">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="image/tennis_racket.jpeg" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="image/tennis_ball.jpeg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="image/tennis_net.jpeg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+            <h1>Tennis Equipment</h1>
+                <img src="image/tennis_racket.jpeg" alt="Tennis Racket" width="300" height="200">
+                <img src="image/tennis_ball.jpeg" alt="Tennis Ball" width="300" height="200">
+                <img src="image/tennis_net.jpeg" alt="Tennis Net Lights" width="300" height="200">
+                <img src="image/tennis_shoes.jpeg" alt="Tennis Shoes" width="300" height="200">
+                <img src="image/tennis_hat.jpeg" alt="Tennis Hat" width="300" height="200">
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
