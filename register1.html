@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="form" name="form" action="register1.php" method="post">
+        <h1>Register</h1>
+        <div class="input-box">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <i class="fa fa-location-arrow" aria-hidden="true"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="email"
+            name="email"
+            id="emailInput"
+            placeholder="Email"
+            required
+            oninput="validateEmailInput()"
+          />
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <br />
+          <span id="emailFeedback" style="color: 01559D"></span>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+          />
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+
+        <div class="input-box">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+            id="password"
+            oninput="CheckPassword()"
+          />
+        </div>
+
+        <div class="input-box">
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Address"
+            required
+          />
+          <i class="fa fa-location-arrow" aria-hidden="true"></i>
+        </div>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox" />Remember me</label>
+        </div>
+        <button type="submit" name="submit" value="submit" class="btn">
+          Sign Up
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
